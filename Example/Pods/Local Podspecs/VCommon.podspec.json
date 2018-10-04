@@ -1,15 +1,15 @@
 {
   "name": "VCommon",
   "version": "0.1.0",
-  "summary": "A short description of VCommon.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "VCommon - Swift",
+  "description": "VCommon is a shared library for using in the projects of Vektör.",
   "homepage": "https://github.com/gultekingokhan/VCommon",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "gultekingokhan": "gokhangultekin07@hotmail.com"
+    "gultekingokhan": "gokhan.gultekin@vektortelekom.com"
   },
   "source": {
     "git": "https://github.com/gultekingokhan/VCommon.git",
@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "8.0"
   },
+  "swift_version": "4.2",
   "source_files": "VCommon/Classes/**/*"
 }
