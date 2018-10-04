@@ -1,0 +1,22 @@
+{
+  "name": "VCommon",
+  "version": "0.1.0",
+  "summary": "A short description of VCommon.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/gultekingokhan/VCommon",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gultekingokhan": "gokhangultekin07@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/gultekingokhan/VCommon.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VCommon/Classes/**/*"
+}
