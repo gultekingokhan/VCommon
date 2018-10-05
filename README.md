@@ -1,9 +1,10 @@
 # VCommon
 
-[![CI Status](https://img.shields.io/travis/gultekingokhan/VCommon.svg?style=flat)](https://travis-ci.org/gultekingokhan/VCommon)
+[![Build Status](https://app.bitrise.io/app/b5c8fae8a8bb1ffe/status.svg?token=IBC854Bpg_2_q0HEb0kyMA&branch=master)](https://app.bitrise.io/app/b5c8fae8a8bb1ffe)
 [![Version](https://img.shields.io/cocoapods/v/VCommon.svg?style=flat)](https://cocoapods.org/pods/VCommon)
 [![License](https://img.shields.io/cocoapods/l/VCommon.svg?style=flat)](https://cocoapods.org/pods/VCommon)
 [![Platform](https://img.shields.io/cocoapods/p/VCommon.svg?style=flat)](https://cocoapods.org/pods/VCommon)
+![Swift 4.2+](https://img.shields.io/badge/Swift-4.2%2B-orange.svg)
 
 ## Example
 
@@ -22,7 +23,7 @@ pod 'VCommon'
 
 ## Author
 
-gultekingokhan, gokhangultekin07@hotmail.com
+gultekingokhan, gokhan.gultekin@vektortelekom.com
 
 ## License
 
