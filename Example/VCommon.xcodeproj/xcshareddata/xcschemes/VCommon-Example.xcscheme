@@ -52,6 +52,16 @@
                ReferencedContainer = "container:VCommon.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "766862D621677A0100036422"
+               BuildableName = "V_ColorExtensionsTests.xctest"
+               BlueprintName = "V_ColorExtensionsTests"
+               ReferencedContainer = "container:VCommon.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

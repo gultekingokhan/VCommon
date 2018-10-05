@@ -5,6 +5,8 @@ target 'VCommon_Example' do
 
   target 'VCommon_Tests' do
     inherit! :search_paths
-
+  end
+  target 'V_ColorExtensionsTests' do
+    inherit! :search_paths
   end
 end
