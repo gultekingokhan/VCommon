@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "1000"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -56,9 +56,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "766862D621677A0100036422"
-               BuildableName = "V_ColorExtensionsTests.xctest"
-               BlueprintName = "V_ColorExtensionsTests"
+               BlueprintIdentifier = "763FAEC9216B503500589BD7"
+               BuildableName = "V_ColorTests.xctest"
+               BlueprintName = "V_ColorTests"
                ReferencedContainer = "container:VCommon.xcodeproj">
             </BuildableReference>
          </TestableReference>

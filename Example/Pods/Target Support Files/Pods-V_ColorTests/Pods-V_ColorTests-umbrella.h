@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_V_ColorExtensionsTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_V_ColorExtensionsTestsVersionString[];
+FOUNDATION_EXPORT double Pods_V_ColorTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_V_ColorTestsVersionString[];
 

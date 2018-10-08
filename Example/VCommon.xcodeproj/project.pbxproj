@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19676A07850CDCB96DF4E044 /* Pods_V_ColorExtensionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6433FDC457E1347847E7A2 /* Pods_V_ColorExtensionsTests.framework */; };
 		288B48BABD76559D18BB64FC /* Pods_VCommon_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F9B65D18020A48157F58E9 /* Pods_VCommon_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -15,7 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		766862DA21677A0100036422 /* V_ColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766862D921677A0100036422 /* V_ColorExtensionsTests.swift */; };
+		763FAECD216B503500589BD7 /* V_ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763FAECC216B503500589BD7 /* V_ColorTests.swift */; };
+		81730578DF802390AB279320 /* Pods_V_ColorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D87B93E27170C8A2C62555 /* Pods_V_ColorTests.framework */; };
 		A1C75C484D62DB189D2C03F7 /* Pods_VCommon_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AE6D5BF115F2C3B3AB0FCC /* Pods_VCommon_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = VCommon;
 		};
-		766862DC21677A0100036422 /* PBXContainerItemProxy */ = {
+		763FAECF216B503500589BD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
@@ -38,8 +38,10 @@
 
 /* Begin PBXFileReference section */
 		148AC960F1DF6E537E0E1D69 /* Pods-VCommon_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCommon_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VCommon_Tests/Pods-VCommon_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4055B62F2371180F2D1792F9 /* Pods-V_ColorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V_ColorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-V_ColorTests/Pods-V_ColorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		52AE6D5BF115F2C3B3AB0FCC /* Pods_VCommon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCommon_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		574E0D5839130EAFC08345C3 /* Pods-VCommon_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCommon_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-VCommon_Example/Pods-VCommon_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5C5BC353682EEE4809C4162A /* Pods-V_ColorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V_ColorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-V_ColorTests/Pods-V_ColorTests.release.xcconfig"; sourceTree = "<group>"; };
 		5C6433FDC457E1347847E7A2 /* Pods_V_ColorExtensionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_V_ColorExtensionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* VCommon_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCommon_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,11 +56,10 @@
 		62F0590D9A384551B7744176 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		65F9B65D18020A48157F58E9 /* Pods_VCommon_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCommon_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E733C2E49F6D2281170BD70 /* VCommon.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VCommon.podspec; path = ../VCommon.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		766862D721677A0100036422 /* V_ColorExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V_ColorExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		766862D921677A0100036422 /* V_ColorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V_ColorExtensionsTests.swift; sourceTree = "<group>"; };
-		766862DB21677A0100036422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CDA50FE3E341E48A64F8DC2 /* Pods-V_ColorExtensionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V_ColorExtensionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-V_ColorExtensionsTests/Pods-V_ColorExtensionsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D9F7060AB83CED619E40F35D /* Pods-V_ColorExtensionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V_ColorExtensionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-V_ColorExtensionsTests/Pods-V_ColorExtensionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		75D87B93E27170C8A2C62555 /* Pods_V_ColorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_V_ColorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763FAECA216B503500589BD7 /* V_ColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V_ColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		763FAECC216B503500589BD7 /* V_ColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V_ColorTests.swift; sourceTree = "<group>"; };
+		763FAECE216B503500589BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3D92FBB65A278C8E2BF2DE9 /* Pods-VCommon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCommon_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VCommon_Tests/Pods-VCommon_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ECD15B9D3C08409F8BBB53C6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FE6A0DC307C849FD51B51872 /* Pods-VCommon_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCommon_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VCommon_Example/Pods-VCommon_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,11 +82,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		766862D421677A0100036422 /* Frameworks */ = {
+		763FAEC7216B503500589BD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19676A07850CDCB96DF4E044 /* Pods_V_ColorExtensionsTests.framework in Frameworks */,
+				81730578DF802390AB279320 /* Pods_V_ColorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +99,7 @@
 				52AE6D5BF115F2C3B3AB0FCC /* Pods_VCommon_Example.framework */,
 				65F9B65D18020A48157F58E9 /* Pods_VCommon_Tests.framework */,
 				5C6433FDC457E1347847E7A2 /* Pods_V_ColorExtensionsTests.framework */,
+				75D87B93E27170C8A2C62555 /* Pods_V_ColorTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,7 +110,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for VCommon */,
 				607FACE81AFB9204008FA782 /* Tests */,
-				766862D821677A0100036422 /* V_ColorExtensionsTests */,
+				763FAECB216B503500589BD7 /* V_ColorTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				7FE5D095BE0A1358E47A64F0 /* Pods */,
 				4D6C4F7B4E250D47DD7D680F /* Frameworks */,
@@ -120,7 +122,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* VCommon_Example.app */,
 				607FACE51AFB9204008FA782 /* VCommon_Tests.xctest */,
-				766862D721677A0100036422 /* V_ColorExtensionsTests.xctest */,
+				763FAECA216B503500589BD7 /* V_ColorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,13 +176,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		766862D821677A0100036422 /* V_ColorExtensionsTests */ = {
+		763FAECB216B503500589BD7 /* V_ColorTests */ = {
 			isa = PBXGroup;
 			children = (
-				766862D921677A0100036422 /* V_ColorExtensionsTests.swift */,
-				766862DB21677A0100036422 /* Info.plist */,
+				763FAECC216B503500589BD7 /* V_ColorTests.swift */,
+				763FAECE216B503500589BD7 /* Info.plist */,
 			);
-			path = V_ColorExtensionsTests;
+			path = V_ColorTests;
 			sourceTree = "<group>";
 		};
 		7FE5D095BE0A1358E47A64F0 /* Pods */ = {
@@ -190,8 +192,8 @@
 				574E0D5839130EAFC08345C3 /* Pods-VCommon_Example.release.xcconfig */,
 				148AC960F1DF6E537E0E1D69 /* Pods-VCommon_Tests.debug.xcconfig */,
 				E3D92FBB65A278C8E2BF2DE9 /* Pods-VCommon_Tests.release.xcconfig */,
-				7CDA50FE3E341E48A64F8DC2 /* Pods-V_ColorExtensionsTests.debug.xcconfig */,
-				D9F7060AB83CED619E40F35D /* Pods-V_ColorExtensionsTests.release.xcconfig */,
+				4055B62F2371180F2D1792F9 /* Pods-V_ColorTests.debug.xcconfig */,
+				5C5BC353682EEE4809C4162A /* Pods-V_ColorTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -237,23 +239,23 @@
 			productReference = 607FACE51AFB9204008FA782 /* VCommon_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		766862D621677A0100036422 /* V_ColorExtensionsTests */ = {
+		763FAEC9216B503500589BD7 /* V_ColorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 766862E021677A0100036422 /* Build configuration list for PBXNativeTarget "V_ColorExtensionsTests" */;
+			buildConfigurationList = 763FAED1216B503500589BD7 /* Build configuration list for PBXNativeTarget "V_ColorTests" */;
 			buildPhases = (
-				A1F026286C93912BA8C54CE3 /* [CP] Check Pods Manifest.lock */,
-				766862D321677A0100036422 /* Sources */,
-				766862D421677A0100036422 /* Frameworks */,
-				766862D521677A0100036422 /* Resources */,
+				60B4672127EBACF30714DB2C /* [CP] Check Pods Manifest.lock */,
+				763FAEC6216B503500589BD7 /* Sources */,
+				763FAEC7216B503500589BD7 /* Frameworks */,
+				763FAEC8216B503500589BD7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				766862DD21677A0100036422 /* PBXTargetDependency */,
+				763FAED0216B503500589BD7 /* PBXTargetDependency */,
 			);
-			name = V_ColorExtensionsTests;
-			productName = V_ColorExtensionsTests;
-			productReference = 766862D721677A0100036422 /* V_ColorExtensionsTests.xctest */;
+			name = V_ColorTests;
+			productName = V_ColorTests;
+			productReference = 763FAECA216B503500589BD7 /* V_ColorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -263,7 +265,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -275,7 +277,7 @@
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
-					766862D621677A0100036422 = {
+					763FAEC9216B503500589BD7 = {
 						CreatedOnToolsVersion = 10.0;
 						DevelopmentTeam = 3469TQJTZC;
 						ProvisioningStyle = Automatic;
@@ -298,7 +300,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* VCommon_Example */,
 				607FACE41AFB9204008FA782 /* VCommon_Tests */,
-				766862D621677A0100036422 /* V_ColorExtensionsTests */,
+				763FAEC9216B503500589BD7 /* V_ColorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -321,7 +323,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		766862D521677A0100036422 /* Resources */ = {
+		763FAEC8216B503500589BD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,6 +333,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		60B4672127EBACF30714DB2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-V_ColorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6E71BFE05C9138E7C2E14F27 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,24 +381,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-VCommon_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A1F026286C93912BA8C54CE3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-V_ColorExtensionsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -423,11 +425,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		766862D321677A0100036422 /* Sources */ = {
+		763FAEC6216B503500589BD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				766862DA21677A0100036422 /* V_ColorExtensionsTests.swift in Sources */,
+				763FAECD216B503500589BD7 /* V_ColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,10 +441,10 @@
 			target = 607FACCF1AFB9204008FA782 /* VCommon_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
-		766862DD21677A0100036422 /* PBXTargetDependency */ = {
+		763FAED0216B503500589BD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* VCommon_Example */;
-			targetProxy = 766862DC21677A0100036422 /* PBXContainerItemProxy */;
+			targetProxy = 763FAECF216B503500589BD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -478,12 +480,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -532,12 +536,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -639,30 +645,28 @@
 			};
 			name = Release;
 		};
-		766862DE21677A0100036422 /* Debug */ = {
+		763FAED2216B503500589BD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CDA50FE3E341E48A64F8DC2 /* Pods-V_ColorExtensionsTests.debug.xcconfig */;
+			baseConfigurationReference = 4055B62F2371180F2D1792F9 /* Pods-V_ColorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 3469TQJTZC;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = V_ColorExtensionsTests/Info.plist;
+				INFOPLIST_FILE = V_ColorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gokhan.V-ColorExtensionsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gokhan.V-ColorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.2;
@@ -671,28 +675,26 @@
 			};
 			name = Debug;
 		};
-		766862DF21677A0100036422 /* Release */ = {
+		763FAED3216B503500589BD7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9F7060AB83CED619E40F35D /* Pods-V_ColorExtensionsTests.release.xcconfig */;
+			baseConfigurationReference = 5C5BC353682EEE4809C4162A /* Pods-V_ColorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3469TQJTZC;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = V_ColorExtensionsTests/Info.plist;
+				INFOPLIST_FILE = V_ColorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gokhan.V-ColorExtensionsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gokhan.V-ColorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -730,11 +732,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		766862E021677A0100036422 /* Build configuration list for PBXNativeTarget "V_ColorExtensionsTests" */ = {
+		763FAED1216B503500589BD7 /* Build configuration list for PBXNativeTarget "V_ColorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				766862DE21677A0100036422 /* Debug */,
-				766862DF21677A0100036422 /* Release */,
+				763FAED2216B503500589BD7 /* Debug */,
+				763FAED3216B503500589BD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
