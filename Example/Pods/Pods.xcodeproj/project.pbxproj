@@ -19,6 +19,7 @@
 		4EB77EE5BB7BB3D92BAD6EF9BA83F60B /* Pods-V_ColorExtensionsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D35E393ADA2EFF36BA7A00ED19122 /* Pods-V_ColorExtensionsTests-dummy.m */; };
 		5202BC76CF4C68EE94C48FF3A164CEE3 /* Pods-VCommon_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9734D7193CF9A510E4978C5001F1ABB /* Pods-VCommon_Tests-dummy.m */; };
 		5C11E076E76AC796D15F16AECA82B271 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D5C48C004C02FE01AFF5A44B55EE2 /* TestViewController.swift */; };
+		763FAEC5216B4A8B00589BD7 /* V_Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763FAEC4216B4A8B00589BD7 /* V_Date.swift */; };
 		7A640A550BBF58D56B8380C3F478AA21 /* TestViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = E3E37E3DE15C7F35378B0FA69152318B /* TestViewController.xib */; };
 		8012A1FD8F7A50DC5A77F4C33D3D61D9 /* VCommon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 693421A2E66E3675CF2D82600138D85F /* VCommon.bundle */; };
 		864C867F5C6053A81AB6AB34BFB1F12E /* TestViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = D86D5C48C004C02FE01AFF5A44B55EE2 /* TestViewController.swift */; };
@@ -92,6 +93,7 @@
 		6D4866246AAC542888361B7B7806D7E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73CF3BBA2B331089713429B49868BDE0 /* VCommon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VCommon.modulemap; sourceTree = "<group>"; };
 		761204513714627C53772ECC0444C5E8 /* VCommon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VCommon-prefix.pch"; sourceTree = "<group>"; };
+		763FAEC4216B4A8B00589BD7 /* V_Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = V_Date.swift; path = VCommon/Classes/V_Date.swift; sourceTree = "<group>"; };
 		77E2706D6F7B8D69BDE0660637F2A17C /* VCommon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VCommon-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		991FD1FA98AFF81220F8CC5894B73B09 /* Pods-VCommon_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VCommon_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				D86D5C48C004C02FE01AFF5A44B55EE2 /* TestViewController.swift */,
 				E3E37E3DE15C7F35378B0FA69152318B /* TestViewController.xib */,
 				5A49681C897289B557F648CB9D5ED4CE /* V_ColorExtensions.swift */,
+				763FAEC4216B4A8B00589BD7 /* V_Date.swift */,
 				82F630784E142DAB809861AFA38379AC /* Pod */,
 				528B68E707CF7914BD4D817645BA28E0 /* Resources */,
 				1E77BCBB9660780D0A5625FBF82728E1 /* Support Files */,
@@ -519,6 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763FAEC5216B4A8B00589BD7 /* V_Date.swift in Sources */,
 				5C11E076E76AC796D15F16AECA82B271 /* TestViewController.swift in Sources */,
 				7A640A550BBF58D56B8380C3F478AA21 /* TestViewController.xib in Sources */,
 				2C05E984F2EBF0E39CD71CD69ED52295 /* V_ColorExtensions.swift in Sources */,
@@ -752,6 +756,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -810,6 +815,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
