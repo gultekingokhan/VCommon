@@ -62,6 +62,26 @@
                ReferencedContainer = "container:VCommon.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7614B69F216B552B009FB108"
+               BuildableName = "V_Date.xctest"
+               BlueprintName = "V_Date"
+               ReferencedContainer = "container:VCommon.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7614B6AD216B5616009FB108"
+               BuildableName = "V_DateTests.xctest"
+               BlueprintName = "V_DateTests"
+               ReferencedContainer = "container:VCommon.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

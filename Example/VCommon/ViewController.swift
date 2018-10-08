@@ -9,13 +9,30 @@
 import UIKit
 import VCommon
 
+
+struct DateHelper {
+
+    static func generateDate(string: String, format: String = "yyyy-MM-dd") -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = NSTimeZone.default
+        dateFormatter.dateFormat = format
+
+        return dateFormatter.date(from: string)!
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor().hex(string: "FC5450")
-        
+//        
+//        let given = DateHelper.generateDate(string: "2019-02-21")
+//        let expected = DateHelper.generateDate(string: "2019-02-14")
+////
+//        print("Date: \(V_Date.aWeekBefore(date: given))")
+
         //perform(#selector(openTestVC), with: self, afterDelay: 3.0)
     }
     

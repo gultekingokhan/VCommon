@@ -7,27 +7,37 @@
 //
 
 import XCTest
+@testable import VCommon
 
 class V_ColorTests: XCTestCase {
-
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testHexColorNotNil() {
+        let example = "FC5450"
+        XCTAssertNotNil(UIColor().hex(string: example))
     }
-
+    
+    func testemptyHexCode() {
+        let example = ""
+        XCTAssertNotNil(UIColor().hex(string: example))
+    }
+    
+    func testWithOrWithoutPrefix() {
+        XCTAssertEqual(UIColor().hex(string: "FC5450"), UIColor().hex(string: "#FC5450"))
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
 }
