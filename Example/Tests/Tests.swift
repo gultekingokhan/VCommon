@@ -1,5 +1,5 @@
 import XCTest
-import VCommon
+//import VCommon
 
 class Tests: XCTestCase {
     

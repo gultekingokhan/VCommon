@@ -28,15 +28,18 @@ VCommon is a shared library for using in the projects of Vektör.
   s.source           = { :git => 'https://github.com/gultekingokhan/VCommon.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version = '4.2'
   s.source_files = 'VCommon/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'VCommon' => ['VCommon/Assets/*.png']
-  # }
+
+  s.resource_bundles = {
+      'VCommon' => ['VCommon/**/*']
+  }
+
+  # s.resources = 'VCommon/Classes/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
 end

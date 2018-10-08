@@ -16,8 +16,13 @@
     "tag": "0.1.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "swift_version": "4.2",
-  "source_files": "VCommon/Classes/**/*"
+  "source_files": "VCommon/Classes/**/*",
+  "resource_bundles": {
+    "VCommon": [
+      "VCommon/**/*"
+    ]
+  }
 }
