@@ -89,6 +89,14 @@ class V_DateTests: XCTestCase {
         XCTAssertEqual(days, 5)
         XCTAssertNotEqual(days, -5)
     }
+    /*
+    func testDateIsEqualToOtherDate() {
+        let date1 = DateHelper.generateDate(string: "2019-02-21 15:00")
+        let date2 = DateHelper.generateDate(string: "2019-02-21 15:00")
+        
+        XCTAssertEqual(date1, date2)
+    }
+    */
 }
 
 struct DateHelper {
