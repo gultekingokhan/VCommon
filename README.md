@@ -4,6 +4,8 @@
 [![Version](https://img.shields.io/cocoapods/v/VCommon.svg?style=flat)](https://cocoapods.org/pods/VCommon)
 [![License](https://img.shields.io/cocoapods/l/VCommon.svg?style=flat)](https://cocoapods.org/pods/VCommon)
 [![Platform](https://img.shields.io/cocoapods/p/VCommon.svg?style=flat)](https://cocoapods.org/pods/VCommon)
+![Xcode 10.0+](https://img.shields.io/badge/Xcode-10.0%2B-blue.svg) 
+![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-orange.svg)
 ![Swift 4.2+](https://img.shields.io/badge/Swift-4.2%2B-orange.svg)
 
 ## Example
