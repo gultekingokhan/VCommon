@@ -15,8 +15,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 VCommon is available through [CocoaPods](https://cocoapods.org). To install
@@ -26,9 +24,12 @@ it, simply add the following line to your Podfile:
 pod 'VCommon'
 ```
 
+## Documentation
+If you want to get more information or just explore, please visit our [Documentation](https://github.com/gultekingokhan/VCommon/wiki).
+
 ## Author
 
-gultekingokhan, gokhan.gultekin@vektortelekom.com
+Vektör iOS team mobile.user@vektortelekom.com
 
 ## License
 
