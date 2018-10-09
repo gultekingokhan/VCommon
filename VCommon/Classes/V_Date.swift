@@ -41,6 +41,19 @@ public extension Date {
     func isToday() -> Bool {
         return self == Date()
     }
+    
+    func isYesterday() -> Bool {
+        let yesterday = Date().daysBefore(days: 1)
+        return self.isSameDayWith(date: yesterday)
+    }
+    
+    func isSameDayWith(date: Date) -> Bool {
+        let calendar = Calendar.current
+        let dc1 = calendar.dateComponents([.day, .month, .year], from: self)
+        let dc2 = calendar.dateComponents([.day, .month, .year], from: date)
+        return (dc1.day == dc2.day && dc1.month == dc2.month && (dc1.year != nil) && (dc2.year != nil))
+    }
+    
 }
 
 extension String { //Use this extension where dates in String format
@@ -66,5 +79,12 @@ public struct V_Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: from)
+    }
+    
+    public static func humanReadableTime(seconds: Int) -> String {
+        let hours = Int(seconds) / 3600
+        let minutes = Int(seconds) / 60 % 60
+        let seconds = Int(seconds) % 60
+        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
     }
 }

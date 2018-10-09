@@ -89,21 +89,48 @@ class V_DateTests: XCTestCase {
         XCTAssertEqual(days, 5)
         XCTAssertNotEqual(days, -5)
     }
-    /*
-    func testDateIsEqualToOtherDate() {
-        let date1 = DateHelper.generateDate(string: "2019-02-21 15:00")
-        let date2 = DateHelper.generateDate(string: "2019-02-21 15:00")
-        
-        XCTAssertEqual(date1, date2)
+    
+    func testIsToday() {
+        let today = DateHelper.generateDate(string: "2019-02-21 15:00")
+        XCTAssertTrue(today.mockIsToday())
     }
-    */
+    
+    func testIsYesterday() {
+        let yesterday = DateHelper.generateDate(string: "2019-02-20 15:00")
+        XCTAssertTrue(yesterday.mockIsYesterday())
+    }
+    
+    func testDateIsSameWithOtherDate() {
+        let date1 = DateHelper.generateDate(string: "2019-02-21 15:00")
+        let date2 = DateHelper.generateDate(string: "2019-02-21 14:00")
+        
+        XCTAssertTrue(date1.isSameDayWith(date: date2))
+    }
+    
+    func testHumanReadableTime() {
+        let expectedOutput = "00:01:12"
+        let output = V_Date.humanReadableTime(seconds: 72)
+        XCTAssertEqual(output, expectedOutput)
+    }
 }
 
-struct DateHelper {
+class DateHelper {
     
     static func generateDate(string: String, format: String = "yyyy-MM-dd HH:mm") -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.date(from: string)!
+    }
+}
+
+public extension Date {
+    func mockIsToday() -> Bool {
+        return self == DateHelper.generateDate(string: "2019-02-21 15:00") //As today
+    }
+    
+    func mockIsYesterday() -> Bool {
+        let today = DateHelper.generateDate(string: "2019-02-21 15:00")
+        let yesterday = today.daysBefore(days: 1)
+        return self.isSameDayWith(date: yesterday)
     }
 }
