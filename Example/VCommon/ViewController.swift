@@ -11,12 +11,17 @@ import VCommon
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var timerLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Demonstrating how to use hex code converter from color extensions
         view.backgroundColor = UIColor().hex(string: "FC5450")
-
-        //perform(#selector(openTestVC), with: self, afterDelay: 3.0)
+        
+        //Demonstating how to use date extensions and one of the examples that can be interacted with UI
+        timerLabel.text = V_Date.humanReadableTime(seconds: 1924)
+        
     }
     
     @objc func openTestVC() {
@@ -27,6 +32,7 @@ class ViewController: UIViewController {
         let bundle = Bundle(url: bundleURL!)
         let vc = TestViewController(nibName: "TestViewController", bundle: bundle)
         present(vc, animated: true, completion: nil)
+        //TODO: Find the way that calling resource from bundle more easily.
     }
 }
 
