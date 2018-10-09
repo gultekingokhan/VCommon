@@ -1,3 +1,6 @@
+
+![Vektor logo](/Example/VCommon/Images.xcassets/vektor-small.imageset/vektor-small.png)
+
 # VCommon
 
 [![Build Status](https://app.bitrise.io/app/b5c8fae8a8bb1ffe/status.svg?token=IBC854Bpg_2_q0HEb0kyMA&branch=master)](https://app.bitrise.io/app/b5c8fae8a8bb1ffe)
