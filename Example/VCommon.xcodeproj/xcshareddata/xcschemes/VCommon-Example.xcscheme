@@ -92,6 +92,16 @@
                ReferencedContainer = "container:VCommon.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7676C6A9216E2E6F00D264F6"
+               BuildableName = "V_ViewTests.xctest"
+               BlueprintName = "V_ViewTests"
+               ReferencedContainer = "container:VCommon.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

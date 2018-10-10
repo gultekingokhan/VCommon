@@ -19,6 +19,9 @@ target 'VCommon_Example' do
   target 'V_ValidatorTests' do
       inherit! :search_paths
   end
+  target 'V_ViewTests' do
+      inherit! :search_paths
+  end
 end
 
 post_install do |installer|
