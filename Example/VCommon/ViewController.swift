@@ -11,7 +11,20 @@ import VCommon
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var timerLabel: UILabel!
+    //@IBOutlet weak var timerLabel: UILabel!
+    //@IBOutlet weak var pickerView: V_PickerView!
+    
+    @IBOutlet weak var showhidePickerViewButton: UIButton!
+    @IBAction func showhidePickerViewButtonTapped(_ sender: Any) {
+    
+        if isPickerViewShown() {
+            hidePickerView()
+            showhidePickerViewButton.setTitle("Hide picker view", for: .normal)
+        } else {
+            showPickerView()
+            showhidePickerViewButton.setTitle("Show picker view", for: .normal)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +33,10 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor().hex(string: "FC5450")
         
         //Demonstating how to use date extensions and one of the examples that can be interacted with UI
-        timerLabel.text = V_Date.humanReadableTime(seconds: 1924)
+        //timerLabel.text = V_Date.humanReadableTime(seconds: 1924)
     
+        //let text = "hello from the other side"
+        //timerLabel.attributedText = text.multipleBoldSubstrings(substringArray: ["from", "other"], size: 20, color: UIColor.white)
     }
     
     @objc func openTestVC() {
@@ -34,5 +49,9 @@ class ViewController: UIViewController {
         present(vc, animated: true, completion: nil)
         //TODO: Find the way that calling resource from bundle more easily.
     }
+    
+    
+    
+    
 }
 

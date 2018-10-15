@@ -94,8 +94,14 @@ class V_ValidatorTests: XCTestCase {
     }
     
     func testValidatePhoneNumber() {
-        XCTAssertEqual("+905346341782", "5346341782".isValidPhoneNumber())
-        XCTAssertEqual("+905346341782", "05346341782".isValidPhoneNumber())
-        XCTAssertEqual("+905346341782", "+905346341782".isValidPhoneNumber())
+        XCTAssertEqual("+905346341782", "5346341782".validatePhoneNumber())
+        XCTAssertEqual("+905346341782", "05346341782".validatePhoneNumber())
+        XCTAssertEqual("+905346341782", "+905346341782".validatePhoneNumber())
+    }
+    
+    func testValidatePhoneNumberWRegex() {
+        XCTAssertFalse("5346341782".isValidPhoneNumber())
+        XCTAssertTrue("05346341782".isValidPhoneNumber())
+        XCTAssertTrue("+905346341782".isValidPhoneNumber())
     }
 }

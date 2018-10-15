@@ -1,5 +1,5 @@
 PODS:
-  - VCommon (0.1.3)
+  - VCommon (0.1.5)
 
 DEPENDENCIES:
   - VCommon (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  VCommon: 119cd9556a4b282d402725a7e97c593f782ad57a
+  VCommon: dd711efcf07f5346b18a56ae3075ac4d237f3f85
 
 PODFILE CHECKSUM: f6e015c0f26a734d4c2a49a187f64472ceb33794
 
