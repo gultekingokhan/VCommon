@@ -9,12 +9,10 @@
 import UIKit
 import VCommon
 
-class ViewController: UIViewController, V_PickerViewDelegate {
+class ViewController: UIViewController, V_PickerViewDelegate, V_ImagePreviewDelegate {
     
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var showPickerViewButton: UIButton!
-    
-    var pickerView: V_PickerView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,24 +24,21 @@ class ViewController: UIViewController, V_PickerViewDelegate {
         timerLabel.text = V_Date.humanReadableTime(seconds: 1924)
         
     }
-    
-    @objc func openTestVC() {
+
+    @IBAction func openImagePreview() {
         
-        //This is an example for loading xib files from the Pod. You are free to remove the lines below.
-        let containingBundle = Bundle(for: TestViewController.self)
-        let bundleURL = containingBundle.url(forResource: "VCommon", withExtension: "bundle")
-        let bundle = Bundle(url: bundleURL!)
-        let vc = TestViewController(nibName: "TestViewController", bundle: bundle)
-        present(vc, animated: true, completion: nil)
-        //TODO: Find the way that calling resource from bundle more easily.
+        let imagePreviewVC = V_ImagePreviewViewController()
+        imagePreviewVC.imageToShow = UIImage(named: "spacex-example")
+        imagePreviewVC.delegate = self
+        present(imagePreviewVC, animated: true, completion: nil)
     }
     
     @IBAction func showPickerButtonTapped(_ sender: Any) {
         
-        pickerView = V_PickerView()
-        pickerView?.delegate = self
-        pickerView?.data = ["1", "2", "3"]
-        pickerView?.show(from: self)
+        let pickerView = V_PickerView()
+        pickerView.delegate = self
+        pickerView.data = ["1", "2", "3"]
+        pickerView.show(from: self)
     }
     
     func didSelectIndexFromPickerView(index: Int) {
