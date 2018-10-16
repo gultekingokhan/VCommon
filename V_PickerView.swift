@@ -9,7 +9,8 @@ import Foundation
 
 public protocol V_PickerViewDelegate {
 
-    func didSelectIndexFromPickerView(index: Int)
+    //func load(data: [String])
+    func didSelect(index: Int)
 }
 
 public class V_PickerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -74,7 +75,7 @@ public class V_PickerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource 
     
     //MARK: Button actions
     @IBAction func chooseButtonTapped(_ sender: Any) {
-        delegate?.didSelectIndexFromPickerView(index: pickerView.selectedRow(inComponent: 0))
+        delegate?.didSelect(index: pickerView.selectedRow(inComponent: 0))
         hide()
     }
     

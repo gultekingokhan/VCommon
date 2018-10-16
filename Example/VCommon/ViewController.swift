@@ -9,22 +9,12 @@
 import UIKit
 import VCommon
 
-class ViewController: UIViewController {
-
-    //@IBOutlet weak var timerLabel: UILabel!
-    //@IBOutlet weak var pickerView: V_PickerView!
+class ViewController: UIViewController, V_PickerViewDelegate {
     
-    @IBOutlet weak var showhidePickerViewButton: UIButton!
-    @IBAction func showhidePickerViewButtonTapped(_ sender: Any) {
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var showPickerViewButton: UIButton!
     
-        if isPickerViewShown() {
-            hidePickerView()
-            showhidePickerViewButton.setTitle("Hide picker view", for: .normal)
-        } else {
-            showPickerView()
-            showhidePickerViewButton.setTitle("Show picker view", for: .normal)
-        }
-    }
+    var pickerView: V_PickerView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +23,8 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor().hex(string: "FC5450")
         
         //Demonstating how to use date extensions and one of the examples that can be interacted with UI
-        //timerLabel.text = V_Date.humanReadableTime(seconds: 1924)
-    
-        //let text = "hello from the other side"
-        //timerLabel.attributedText = text.multipleBoldSubstrings(substringArray: ["from", "other"], size: 20, color: UIColor.white)
+        timerLabel.text = V_Date.humanReadableTime(seconds: 1924)
+        
     }
     
     @objc func openTestVC() {
@@ -50,8 +38,16 @@ class ViewController: UIViewController {
         //TODO: Find the way that calling resource from bundle more easily.
     }
     
+    @IBAction func showPickerButtonTapped(_ sender: Any) {
+        
+        pickerView = V_PickerView()
+        pickerView?.delegate = self
+        pickerView?.data = ["1", "2", "3"]
+        pickerView?.show(from: self)
+    }
     
-    
-    
+    func didSelectIndexFromPickerView(index: Int) {
+        print("Selected index from picker: \(index)")
+    }
 }
 
