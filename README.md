@@ -24,6 +24,19 @@ it, simply add the following line to your Podfile:
 pod 'VCommon'
 ```
 
+## Features
+- [x] Utils:
+  - [x] Color extensions 
+  - [x] Date extensions
+  - [x] View extensions
+  - [x] Device extensions
+  - [x] Validator
+- [x] Views:
+  - [x] Picker view
+- [x] View Controllers:
+  - [x] Image preview controller
+  - [x] Web view controller
+
 ## Documentation
 If you want to get more information or just explore, please visit our [Documentation](https://github.com/gultekingokhan/VCommon/wiki).
 
