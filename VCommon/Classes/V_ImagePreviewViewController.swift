@@ -29,11 +29,7 @@ public class V_ImagePreviewViewController: UIViewController, UIScrollViewDelegat
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 5.0
     }
-    
-    override public var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
+
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }

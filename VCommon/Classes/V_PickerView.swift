@@ -84,7 +84,7 @@ public class V_PickerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource 
     
     public func show(from: UIViewController) {
         from.view.addSubview(self)
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
             self.transform = CGAffineTransform(translationX: 0, y: -self.componentHeight)
         }, completion: nil)
     }
@@ -95,5 +95,16 @@ public class V_PickerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource 
         }, completion:{ (completion) in
             self.removeFromSuperview()
         })
+    }
+}
+
+public extension UIViewController {
+    
+    func hideAllPickerViews() {
+        for subview in view.subviews {
+            if subview.isKind(of: V_PickerView.self) {
+                subview.removeFromSuperview()
+            }
+        }
     }
 }

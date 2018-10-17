@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SectionView" customModule="VCommon_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="wy2-nt-W9e" id="Uid-hJ-Dq8"/>
+                <outlet property="descriptionLabel" destination="fI9-wv-hnu" id="jbg-ov-emZ"/>
+                <outlet property="titleLabel" destination="gAe-Dp-RsZ" id="tW3-zx-eLf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wy2-nt-W9e">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAe-Dp-RsZ">
+                    <rect key="frame" x="16" y="20" width="224" height="68.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="50"/>
+                    <color key="textColor" red="0.1019607843" green="0.29411764709999999" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This example app demonstrates how to use some features of VCommon Swift library. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI9-wv-hnu">
+                    <rect key="frame" x="16" y="96.5" width="343" height="74"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gAe-Dp-RsZ" firstAttribute="leading" secondItem="dI4-FN-nOy" secondAttribute="leading" constant="16" id="Jaf-qp-yCq"/>
+                <constraint firstItem="gAe-Dp-RsZ" firstAttribute="top" secondItem="dI4-FN-nOy" secondAttribute="top" constant="20" id="MD3-3J-jHF"/>
+                <constraint firstItem="dI4-FN-nOy" firstAttribute="trailing" secondItem="fI9-wv-hnu" secondAttribute="trailing" constant="16" id="Vu6-jf-Enf"/>
+                <constraint firstItem="fI9-wv-hnu" firstAttribute="top" secondItem="gAe-Dp-RsZ" secondAttribute="bottom" constant="8" id="i5Y-DB-IF8"/>
+                <constraint firstItem="fI9-wv-hnu" firstAttribute="leading" secondItem="dI4-FN-nOy" secondAttribute="leading" constant="16" id="rQv-8q-g2e"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="dI4-FN-nOy"/>
+            <point key="canvasLocation" x="301.60000000000002" y="-575.71214392803597"/>
+        </view>
+    </objects>
+</document>
